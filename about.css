@@ -1,0 +1,194 @@
+/* about.css */
+
+/* General Styling */
+body {
+    background-color: #a28925; /* Dark yellow background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #e7e0c1; /* Blue background */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.navigation {
+    text-align: center; /* Center the navigation */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 2px; /* Remove padding */
+    margin-top: 10px; /* Remove margin */
+}
+
+.nav-list li {
+    display: inline-block; /* Display items inline */
+    margin: 0 15px; /* Space between items */
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #07090b; /* Text color */
+    font-size: 1rem; /* Font size */
+    font-weight: bold;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Description Section */
+#description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* How to Use Section */
+#how-to-use ul {
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+#how-to-use ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Benefits Section */
+#benefits ul {
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+#benefits ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Testimonials Section */
+#testimonials .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+#testimonials blockquote {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    font-style: italic;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+#testimonials footer {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: right;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* For phones and smaller devices */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #description p,
+    #how-to-use ul,
+    #benefits ul {
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #testimonials .row {
+        flex-direction: column;
+    }
+
+    #testimonials blockquote {
+        margin-bottom: 20px;
+    }
+}
+
+/* For tablets and medium-sized screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    #testimonials .row {
+        flex-direction: row;
+    }
+
+    #testimonials blockquote {
+        flex-basis: 48%; /* Cards will be side by side */
+    }
+}
+
+/* For large screens (desktops and laptops) */
+@media (min-width: 993px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    #testimonials blockquote {
+        flex-basis: 45%; /* Slightly wider on larger screens */
+    }
+}
